@@ -1,4 +1,3 @@
-
 <html>
 	<head>
 		<style>
@@ -20,7 +19,7 @@
 			letter = ["Г", "Д", "Е", "Е", "С", "Т", "Ж", "У", " "];
 			btn = new Array(9);
 			function play(B){
-				console.log(B);
+				console.log(B)
 			}
 		</script>
 	</head>
@@ -32,8 +31,8 @@
 				btn[i] = document.createElement("input");
 				btn[i].type = "button";
 				btn[i].value = letter[i];
-				//btn[i].onclick = fuction() {play(this)};
-				document.getElementById('puzzle').appendChild(btn);
+				btn[i].onclick = function() {play(this)};
+				document.getElementById('puzzle').appendChild(btn[i]);
 			}
 		</script>
 	</body>
